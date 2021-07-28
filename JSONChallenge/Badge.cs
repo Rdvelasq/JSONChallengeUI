@@ -13,13 +13,13 @@ namespace JSONChallenge
         public int Id { get; set; }
         public List<string> ListOfDoors { get; set; }
         public bool HasSecurityClearance { get; set; }
-        public int EmployeeId { get; set; }
+        public string EmployeeId { get; set; }
         public DateTime CreatedOn { get; set; }
         public Badge()
         {
 
         }
-        public Badge(int id, List<string> listOfDoors, bool hasSecurityClearance, int employeeId, DateTime createdOn)
+        public Badge(int id, List<string> listOfDoors, bool hasSecurityClearance, string employeeId, DateTime createdOn)
         {
             Id = id;
             ListOfDoors = listOfDoors;
